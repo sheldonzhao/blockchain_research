@@ -71,6 +71,8 @@ https://github.com/WeBankFinTech/WeBASE
 
 ### 5. 界面功能展示
 
+示例平台：154.8.215.133:3002 用户名admin密码Abcd12345
+
 ![数据概览](https://upload-images.jianshu.io/upload_images/150344-855c671cda538187.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![节点监控](https://upload-images.jianshu.io/upload_images/150344-4889039651652987.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
