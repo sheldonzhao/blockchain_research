@@ -1,3 +1,5 @@
+**示例平台：154.8.215.133:3002 用户名admin密码Abcd12345**
+
 ## 1. 什么是WeBASE
 
 微众银行正式开源自研的区块链中间件平台——WeBASE (WeBank Blockchain Application Software Extension)是区块链应用和FISCO BCOS节点之间搭建的中间件平台，该平台适配支持FISCO BCOS底层平台，面向多种对象，如开发者、运营者，并根据不同的场景，包括开发、调试、部署、审计等，打造丰富的功能组件和实用工具，提供友好的、可视化的操作环境。
