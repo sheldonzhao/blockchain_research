@@ -1,3 +1,7 @@
+<h1 align="center"微众银行区块链身份标识WeIdentity调研</h1>
+<p align="center" class="version">Version 0.1</p>
+
+
 ## 1. 什么是WeIdentity
 
 WeIdentity是一套微众银行自主研发并完全开源的实体身份标识与可信数据解决方案，可承载实体对象（人或者物）的现实身份与链上身份的可信映射、以及实现实体对象之间安全的访问授权与数据交换。”
