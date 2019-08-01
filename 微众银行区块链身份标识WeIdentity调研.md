@@ -185,83 +185,84 @@ Credential结构
 ^^^^^^^^^^^^^^
 
 .. list-table::
-:header-rows: 1
+   :header-rows: 1
 
-* - 属性
-- 说明
-* - @context
-- 用于描述Credential的字段信息等
-* - id
-- 本Credential的ID，按UUID生成
-* - issuer
-- Issuer的DID，遵从WeIdentity规范
-* - issued
-- issue日期
-* - claim
-- Claim的具体细节，数据结构由CPT定义，详见CPT介绍
-* - claim.primeNumberIdx
-- 素数在素数表中的index
-* - claim.type
-- Claim Protocol Type的ID，申请按序递增，例如中国内地驾照设置为CPT100
-* - revocation
-- 撤销相关实现，待补充
-* - signature
-- Issuer的签名列表，是一个数组，可由holder和issuer分别打上签名
-* - signature.type
-- 签名类型
-* - signature.created
-- 签名的创建时间
-* - signature.creator
-- 签名机构的WeIdentity DID
-* - signature.domain
-- domain
-* - signature.nonce
-- 随机数
-* - signature.signatureValue
-- 签名的具体value，对整个Credential结构中除去signature字段的其他字段做签名
+   * - 属性
+     - 说明
+   * - @context
+     - 用于描述Credential的字段信息等
+   * - id
+     - 本Credential的ID，按UUID生成
+   * - issuer
+     - Issuer的DID，遵从WeIdentity规范
+   * - issued
+     - issue日期
+   * - claim
+     - Claim的具体细节，数据结构由CPT定义，详见CPT介绍
+   * - claim.primeNumberIdx
+     - 素数在素数表中的index
+   * - claim.type
+     - Claim Protocol Type的ID，申请按序递增，例如中国内地驾照设置为CPT100
+   * - revocation
+     - 撤销相关实现，待补充
+   * - signature
+     - Issuer的签名列表，是一个数组，可由holder和issuer分别打上签名
+   * - signature.type
+     - 签名类型
+   * - signature.created
+     - 签名的创建时间
+   * - signature.creator
+     - 签名机构的WeIdentity DID
+   * - signature.domain
+     - domain
+   * - signature.nonce
+     - 随机数
+   * - signature.signatureValue
+     - 签名的具体value，对整个Credential结构中除去signature字段的其他字段做签名
+
 
 WeIdentity Document格式
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
-:header-rows: 1
+   :header-rows: 1
 
-* - 字段
-- 说明
-* - @context
-- 用于描述WeIdentity Document结构等信息
-* - id
-- WeIdentity DID，表示当前Document描述的Entity，用于自描述
-* - created
-- Document的创建时间
-* - updated
-- Document的更新时间
-* - publicKey
-- 公钥数组列表，格式如下
-* - publicKey.id
-- 公钥的ID
-* - publicKey.type
-- 用于指定signature suite
-* - publicKey.owner
-- 指定控制对应私钥的Entity，遵从WeIdentity规范，如果为空，则表明owner是Document的id字段，如果是Credential类Entity，则owner一般是某用户
-* - authentication
-- 用于Entity证明其与当前Document的关联性
-* - authentication.type
-- 用于指定signature suite
-* - authentication.publicKey
-- 用来验证签名的公钥，引用publicKey数组里定义的公钥
-* - service
-- service描述数组，用于描述跟当前DID相关的服务，格式如下
-* - service.id
-- service endpoint的ID
-* - service.type
-- service endpoint的协议
-* - service.serviceEndpoint
-- serviceEndpoint列表，可以是URI或者一个JSON-LD对象
-* - service.其他
-- 待定
-* - recovery
-- WeIdentity DID私钥丢失后，可由本字段指定的WeIdentity进行公私钥重置。是否需要抽象一层合约层来实现待定
+   * - 字段
+     - 说明
+   * - @context
+     - 用于描述WeIdentity Document结构等信息
+   * - id
+     - WeIdentity DID，表示当前Document描述的Entity，用于自描述
+   * - created
+     - Document的创建时间
+   * - updated
+     - Document的更新时间
+   * - publicKey
+     - 公钥数组列表，格式如下
+   * - publicKey.id
+     - 公钥的ID
+   * - publicKey.type
+     - 用于指定signature suite
+   * - publicKey.owner
+     - 指定控制对应私钥的Entity，遵从WeIdentity规范，如果为空，则表明owner是Document的id字段，如果是Credential类Entity，则owner一般是某用户
+   * - authentication
+     - 用于Entity证明其与当前Document的关联性
+   * - authentication.type
+     - 用于指定signature suite
+   * - authentication.publicKey
+     - 用来验证签名的公钥，引用publicKey数组里定义的公钥
+   * - service
+     - service描述数组，用于描述跟当前DID相关的服务，格式如下
+   * - service.id
+     - service endpoint的ID
+   * - service.type
+     - service endpoint的协议
+   * - service.serviceEndpoint
+     - serviceEndpoint列表，可以是URI或者一个JSON-LD对象
+   * - service.其他
+     - 待定
+   * - recovery
+     - WeIdentity DID私钥丢失后，可由本字段指定的WeIdentity进行公私钥重置。是否需要抽象一层合约层来实现待定
 
 
 
