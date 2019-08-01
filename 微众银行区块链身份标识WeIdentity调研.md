@@ -12,10 +12,6 @@ WeIdentity DID模块在FISCO-BCOS区块链底层平台上实现了一套符合W3
 
 现实世界中存在着各种各样用于描述实体身份、实体间关系的数据，如身份证、行驶证、存款证明、处方、毕业证、房产证、信用报告等。WeIdentity Credential提供了一整套基于W3C VC规范的解决方案，旨在对这一类数据进行标准化、电子化，生成可验证、可交换的凭证（Credential）。
 
-在官方GitHub上，列出了5类应用场景的案例，分别是：新入职员工背景调查、医疗检查结果与处方可信流转、选择性披露、政务办理、慈善公益。
-
-以政务办理为例，居民政务数据存在于不同部门，跨部门的政务办理往往需要先至部门A开具证明，再至部门B进行办理。对居民而言，流程繁琐且文件不易管理与保存；对政府部门而言，希望提升用户体验并确保用户隐私数据不泄露。通过WeIdentity解决方案，可以为居民生成可信的电子证件，居民授权后由机构进行验证，从而简化业务流程，降低隐私数据泄露风险。
-
 WeIdentity官网：[https://fintech.webank.com/weidentity](https://fintech.webank.com/weidentity)
 
 WeIdentity源代码：[https://github.com/WeBankFinTech/WeIdentity](https://github.com/WeBankFinTech/WeIdentity)
