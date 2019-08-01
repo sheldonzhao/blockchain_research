@@ -1,4 +1,4 @@
-<h1 align="center"微众银行区块链身份标识WeIdentity调研</h1>
+<h1 align="center">微众银行区块链身份标识WeIdentity调研</h1>
 <p align="center" class="version">Version 0.1</p>
 
 
